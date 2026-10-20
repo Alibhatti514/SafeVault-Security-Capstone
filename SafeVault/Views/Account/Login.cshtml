@@ -1,0 +1,2 @@
+@model LoginForm
+<section class="card"><h1>Sign in</h1><form method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" class="error"></div><label asp-for="Username"></label><input asp-for="Username" autocomplete="username"/><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password"/><button type="submit">Login</button></form></section>

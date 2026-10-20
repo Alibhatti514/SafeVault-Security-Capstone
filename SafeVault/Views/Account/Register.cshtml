@@ -1,0 +1,2 @@
+@model RegisterForm
+<section class="card"><h1>Create account</h1><form method="post">@Html.AntiForgeryToken()<div asp-validation-summary="All" class="error"></div><label asp-for="Username"></label><input asp-for="Username" autocomplete="username"/><label asp-for="Email"></label><input asp-for="Email" autocomplete="email"/><label asp-for="Password"></label><input asp-for="Password" autocomplete="new-password"/><button type="submit">Register</button></form><p>Passwords must be at least 12 characters.</p></section>
